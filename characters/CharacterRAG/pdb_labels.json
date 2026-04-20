@@ -1,0 +1,737 @@
+{
+  "anya_forger": {
+    "source_url": "https://www.personality-database.com/profile/55226/anya-forger-spy-family-mbti-personality-type",
+    "profile_id": 55226,
+    "mbti": {
+      "type": "ENFP",
+      "letter_percent": {
+        "E": 92,
+        "I": 8,
+        "N": 97,
+        "S": 3,
+        "F": 81,
+        "T": 19,
+        "P": 97,
+        "J": 3
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 11
+      },
+      "neuroticism": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 9
+      },
+      "conscientiousness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 9
+      },
+      "agreeableness": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 9
+      },
+      "openness": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 10
+      }
+    }
+  },
+  "chika_fujiwara": {
+    "source_url": "https://www.personality-database.com/profile/24668/chika-fujiwara-kaguyasama-wa-kokurasetai-tensaitachi-no-renai-zunousen-mbti-personality-type",
+    "profile_id": 24668,
+    "mbti": {
+      "type": "ENFP",
+      "letter_percent": {
+        "E": 99,
+        "I": 1,
+        "N": 93,
+        "S": 7,
+        "F": 97,
+        "T": 3,
+        "P": 97,
+        "J": 3
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 9
+      },
+      "neuroticism": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 9
+      },
+      "conscientiousness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 7
+      },
+      "agreeableness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 9
+      },
+      "openness": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 8
+      }
+    }
+  },
+  "edward_elric": {
+    "source_url": "https://www.personality-database.com/profile/1284/edward-elric-fullmetal-alchemist-brotherhood-mbti-personality-type",
+    "profile_id": 1284,
+    "mbti": {
+      "type": "ENTP",
+      "letter_percent": {
+        "E": 97,
+        "I": 3,
+        "N": 78,
+        "S": 22,
+        "T": 91,
+        "F": 9,
+        "P": 97,
+        "J": 3
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 9
+      },
+      "neuroticism": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 5
+      },
+      "conscientiousness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 6
+      },
+      "agreeableness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 7
+      },
+      "openness": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 8
+      }
+    }
+  },
+  "frieren": {
+    "source_url": "https://www.personality-database.com/profile/274060/frieren-sousou-no-frieren-mbti-personality-type",
+    "profile_id": 274060,
+    "mbti": {
+      "type": "INTP",
+      "letter_percent": {
+        "I": 99,
+        "E": 1,
+        "N": 93,
+        "S": 7,
+        "T": 96,
+        "F": 4,
+        "P": 86,
+        "J": 14
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 16
+      },
+      "neuroticism": {
+        "percent": 0,
+        "level": 1,
+        "label": "Very Low",
+        "votes": 19
+      },
+      "conscientiousness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 14
+      },
+      "agreeableness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 18
+      },
+      "openness": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 19
+      }
+    }
+  },
+  "hitori_gotoh": {
+    "source_url": "https://www.personality-database.com/profile/463479/hitori-bocchi-gotou-bocchi-the-rock-mbti-personality-type",
+    "profile_id": 463479,
+    "mbti": {
+      "type": "INFP",
+      "letter_percent": {
+        "I": 97,
+        "E": 3,
+        "N": 93,
+        "S": 7,
+        "F": 97,
+        "T": 3,
+        "P": 92,
+        "J": 8
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 0,
+        "level": 1,
+        "label": "Very Low",
+        "votes": 23
+      },
+      "neuroticism": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 17
+      },
+      "conscientiousness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 17
+      },
+      "agreeableness": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 19
+      },
+      "openness": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 17
+      }
+    }
+  },
+  "light_yagami": {
+    "source_url": "https://www.personality-database.com/profile/1529/light-yagami-death-note-mbti-personality-type",
+    "profile_id": 1529,
+    "mbti": {
+      "type": "ENTJ",
+      "letter_percent": {
+        "E": 71,
+        "I": 29,
+        "N": 97,
+        "S": 3,
+        "T": 95,
+        "F": 5,
+        "J": 98,
+        "P": 2
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 93
+      },
+      "neuroticism": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 76
+      },
+      "conscientiousness": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 106
+      },
+      "agreeableness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 83
+      },
+      "openness": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 74
+      }
+    }
+  },
+  "maomao": {
+    "source_url": "https://www.personality-database.com/profile/229168/maomao-kusuriya-no-hitorigoto-mbti-personality-type",
+    "profile_id": 229168,
+    "mbti": {
+      "type": "INTP",
+      "letter_percent": {
+        "I": 99,
+        "E": 1,
+        "N": 76,
+        "S": 24,
+        "T": 98,
+        "F": 2,
+        "P": 91,
+        "J": 9
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 22
+      },
+      "neuroticism": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 18
+      },
+      "conscientiousness": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 14
+      },
+      "agreeableness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 23
+      },
+      "openness": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 17
+      }
+    }
+  },
+  "megumin": {
+    "source_url": "https://www.personality-database.com/profile/6874/megumin-kono-subarashii-sekai-ni-shukufuku-wokonosuba-mbti-personality-type",
+    "profile_id": 6874,
+    "mbti": {
+      "type": "INFP",
+      "letter_percent": {
+        "I": 67,
+        "E": 33,
+        "N": 95,
+        "S": 5,
+        "F": 92,
+        "T": 8,
+        "P": 97,
+        "J": 3
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 3
+      },
+      "neuroticism": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 2
+      },
+      "conscientiousness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 3
+      },
+      "agreeableness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 2
+      },
+      "openness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 2
+      }
+    }
+  },
+  "mikoto_misaka": {
+    "source_url": "https://www.personality-database.com/profile/6059/mikoto-misaka-toaru-kagaku-no-railgun-mbti-personality-type",
+    "profile_id": 6059,
+    "mbti": {
+      "type": "ENTJ",
+      "letter_percent": {
+        "E": 87,
+        "I": 13,
+        "N": 75,
+        "S": 25,
+        "T": 90,
+        "F": 10,
+        "J": 78,
+        "P": 22
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 4
+      },
+      "neuroticism": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 5
+      },
+      "conscientiousness": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 3
+      },
+      "agreeableness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 6
+      },
+      "openness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 4
+      }
+    }
+  },
+  "nina_iseri": {
+    "source_url": "https://www.personality-database.com/profile/1608440/nina-iseri-girls-band-cry-mbti-personality-type",
+    "profile_id": 1608440,
+    "mbti": {
+      "type": "ISFP",
+      "letter_percent": {
+        "I": 97,
+        "E": 3,
+        "S": 72,
+        "N": 28,
+        "F": 99,
+        "T": 1,
+        "P": 99,
+        "J": 1
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 4
+      },
+      "neuroticism": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 5
+      },
+      "conscientiousness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 6
+      },
+      "agreeableness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 4
+      },
+      "openness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 3
+      }
+    }
+  },
+  "saitama": {
+    "source_url": "https://www.personality-database.com/profile/2583/saitama-one-punch-man-mbti-personality-type",
+    "profile_id": 2583,
+    "mbti": {
+      "type": "ISTP",
+      "letter_percent": {
+        "I": 98,
+        "E": 2,
+        "S": 94,
+        "N": 6,
+        "T": 97,
+        "F": 3,
+        "P": 93,
+        "J": 7
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 11
+      },
+      "neuroticism": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 11
+      },
+      "conscientiousness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 9
+      },
+      "agreeableness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 14
+      },
+      "openness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 9
+      }
+    }
+  },
+  "son_goku": {
+    "source_url": "https://www.personality-database.com/profile/1266/son-gok-dragon-ball-z-mbti-personality-type",
+    "profile_id": 1266,
+    "mbti": {
+      "type": "ESFP",
+      "letter_percent": {
+        "E": 97,
+        "I": 3,
+        "S": 85,
+        "N": 15,
+        "F": 95,
+        "T": 5,
+        "P": 98,
+        "J": 2
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 25
+      },
+      "neuroticism": {
+        "percent": 0,
+        "level": 1,
+        "label": "Very Low",
+        "votes": 17
+      },
+      "conscientiousness": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 17
+      },
+      "agreeableness": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 21
+      },
+      "openness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 19
+      }
+    }
+  },
+  "tanjiro_kamado": {
+    "source_url": "https://www.personality-database.com/profile/32308/tanjiro-kamado-kimetsu-no-yaiba-mbti-personality-type",
+    "profile_id": 32308,
+    "mbti": {
+      "type": "ENFJ",
+      "letter_percent": {
+        "E": 94,
+        "I": 6,
+        "N": 85,
+        "S": 15,
+        "F": 99,
+        "T": 1,
+        "J": 96,
+        "P": 4
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 24
+      },
+      "neuroticism": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 20
+      },
+      "conscientiousness": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 24
+      },
+      "agreeableness": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 30
+      },
+      "openness": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 16
+      }
+    }
+  },
+  "tobio_kageyama": {
+    "source_url": "https://www.personality-database.com/profile/2391/kageyama-tobio-haikyuu-mbti-personality-type",
+    "profile_id": 2391,
+    "mbti": {
+      "type": "ISTJ",
+      "letter_percent": {
+        "I": 82,
+        "E": 18,
+        "S": 92,
+        "N": 8,
+        "T": 99,
+        "F": 1,
+        "J": 97,
+        "P": 3
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 25,
+        "level": 2,
+        "label": "Low",
+        "votes": 8
+      },
+      "neuroticism": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 5
+      },
+      "conscientiousness": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 6
+      },
+      "agreeableness": {
+        "percent": 0,
+        "level": 1,
+        "label": "Very Low",
+        "votes": 5
+      },
+      "openness": {
+        "percent": 0,
+        "level": 1,
+        "label": "Very Low",
+        "votes": 3
+      }
+    }
+  },
+  "yui_hirasawa": {
+    "source_url": "https://www.personality-database.com/profile/5878/yui-hirasawa-kon-mbti-personality-type",
+    "profile_id": 5878,
+    "mbti": {
+      "type": "ENFP",
+      "letter_percent": {
+        "E": 97,
+        "I": 3,
+        "N": 92,
+        "S": 8,
+        "F": 99,
+        "T": 1,
+        "P": 98,
+        "J": 2
+      }
+    },
+    "big_five": {
+      "extraversion": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 5
+      },
+      "neuroticism": {
+        "percent": 50,
+        "level": 3,
+        "label": "Moderate",
+        "votes": 5
+      },
+      "conscientiousness": {
+        "percent": 0,
+        "level": 1,
+        "label": "Very Low",
+        "votes": 4
+      },
+      "agreeableness": {
+        "percent": 75,
+        "level": 4,
+        "label": "High",
+        "votes": 6
+      },
+      "openness": {
+        "percent": 100,
+        "level": 5,
+        "label": "Very High",
+        "votes": 5
+      }
+    }
+  }
+}

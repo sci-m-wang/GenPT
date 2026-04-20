@@ -1,0 +1,330 @@
+{
+    "name": "SIS",
+    "full_name": "Suicide Intent Scale",
+    "author": "Aaron T. Beck, M.D.",
+    "year": 1978,
+    "description": "Interview the patient about his/her most recent suicide attempt to enable a reliable coding of the objective circumstances of the attempt, and the patient's perceptions of the attempt.",
+    "psychobench_prompt": "You can only reply numbers from 0 to 2 in the following statements. Please rate each item based on the most recent suicide attempt. 0 denotes the least severe, 2 denotes the most severe. Here are the statements, score them one by one:",
+    "psychobench_prompt_choice_instruction": "Each choice is a number from 0 to 2. Please evaluate <character> based on the conversation using the scales: 0 denotes 'low intent/severity', 1 denotes 'moderate intent/severity', and 2 denotes 'high intent/severity'.",
+    "scale": 3,
+    "compute_mode": "SUM",
+    "scoring_note": "Total score is computed by summing items 1-15. If an item is 'Not applicable' code it '-8'. Do not include '-8's when calculating the total score.",
+    "reverse": [],
+    "categories": [
+        {
+            "cat_name": "Objective Circumstances",
+            "cat_questions": [1, 2, 3, 4, 5, 6, 7, 8],
+            "description": "客观情境：与自杀企图相关的客观环境因素",
+            "included_in_total": true
+        },
+        {
+            "cat_name": "Self Report",
+            "cat_questions": [9, 10, 11, 12, 13, 14, 15],
+            "description": "自我报告：患者对自杀企图的主观感知",
+            "included_in_total": true
+        },
+        {
+            "cat_name": "Other Aspects",
+            "cat_questions": [16, 17, 18, 19, 20],
+            "description": "其他方面：不计入总分的补充信息",
+            "included_in_total": false
+        }
+    ],
+    "range": [0, 2],
+    "scoring_interpretation": {
+        "0-10": "Low suicide intent (低自杀意图)",
+        "11-20": "Moderate suicide intent (中度自杀意图)",
+        "21-30": "High suicide intent (高自杀意图)"
+    },
+    "questions": {
+        "1": {
+            "origin_en": "Isolation",
+            "origin_zh": "隔离程度",
+            "rewritten_en": "Was anyone present or nearby during the attempt?",
+            "rewritten_zh": "自杀企图发生时是否有人在场或附近？",
+            "dimension": "Objective Circumstances",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Somebody present", "zh": "有人在场"},
+                "1": {"en": "Somebody nearby, or in visual or vocal contact", "zh": "有人在附近，或在视觉或声音可及范围内"},
+                "2": {"en": "No one nearby or in visual or vocal contact", "zh": "附近没有人，也不在视觉或声音可及范围内"}
+            }
+        },
+        "2": {
+            "origin_en": "Timing",
+            "origin_zh": "时机选择",
+            "rewritten_en": "How likely was intervention during the attempt?",
+            "rewritten_zh": "自杀企图期间被干预的可能性有多大？",
+            "dimension": "Objective Circumstances",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Intervention is probable", "zh": "很可能被干预"},
+                "1": {"en": "Intervention is not likely", "zh": "不太可能被干预"},
+                "2": {"en": "Intervention is highly unlikely", "zh": "极不可能被干预"}
+            }
+        },
+        "3": {
+            "origin_en": "Precautions against Discovery/Intervention",
+            "origin_zh": "防止被发现/干预的预防措施",
+            "rewritten_en": "Were any precautions taken to prevent discovery?",
+            "rewritten_zh": "是否采取了防止被发现的预防措施？",
+            "dimension": "Objective Circumstances",
+            "category": "positive",
+            "options": {
+                "0": {"en": "No precautions", "zh": "没有采取预防措施"},
+                "1": {"en": "Passive precautions (avoiding others but doing nothing to prevent intervention; alone in room with unlocked door)", "zh": "被动预防（避开他人但未采取措施阻止干预；独自在未锁门的房间里）"},
+                "2": {"en": "Active precautions (locked door)", "zh": "主动预防（锁门）"}
+            }
+        },
+        "4": {
+            "origin_en": "Acting to Get Help During/After Attempt",
+            "origin_zh": "企图期间/之后寻求帮助的行为",
+            "rewritten_en": "Did the person seek help during or after the attempt?",
+            "rewritten_zh": "在自杀企图期间或之后是否寻求帮助？",
+            "dimension": "Objective Circumstances",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Notified potential helper regarding attempt", "zh": "通知了可能提供帮助的人"},
+                "1": {"en": "Contacted but did not specifically notify potential helper regarding attempt", "zh": "联系了但未明确告知可能提供帮助的人"},
+                "2": {"en": "Did not contact or notify potential helper", "zh": "未联系或通知可能提供帮助的人"}
+            }
+        },
+        "5": {
+            "origin_en": "Final Acts in Anticipation of Death",
+            "origin_zh": "预期死亡的最终行为",
+            "rewritten_en": "Were any final acts made in anticipation of death (e.g., will, gifts, insurance)?",
+            "rewritten_zh": "是否为预期死亡做了最终安排（如遗嘱、礼物、保险）？",
+            "dimension": "Objective Circumstances",
+            "category": "positive",
+            "options": {
+                "0": {"en": "None", "zh": "没有"},
+                "1": {"en": "Thought about or made some arrangements", "zh": "考虑过或做了一些安排"},
+                "2": {"en": "Made definite plans or completed arrangements", "zh": "制定了明确计划或完成了安排"}
+            }
+        },
+        "6": {
+            "origin_en": "Active Preparation for Attempt",
+            "origin_zh": "为自杀企图做的主动准备",
+            "rewritten_en": "How much preparation was made for the attempt?",
+            "rewritten_zh": "为自杀企图做了多少准备？",
+            "dimension": "Objective Circumstances",
+            "category": "positive",
+            "options": {
+                "0": {"en": "None", "zh": "没有"},
+                "1": {"en": "Minimal to moderate", "zh": "少量到中等"},
+                "2": {"en": "Extensive", "zh": "大量准备"}
+            }
+        },
+        "7": {
+            "origin_en": "Suicide Note",
+            "origin_zh": "遗书",
+            "rewritten_en": "Was a suicide note written?",
+            "rewritten_zh": "是否写了遗书？",
+            "dimension": "Objective Circumstances",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Absence of note", "zh": "没有遗书"},
+                "1": {"en": "Note written, but torn up; note thought about", "zh": "写了遗书但撕毁了；或想过写遗书"},
+                "2": {"en": "Presence of note", "zh": "有遗书"}
+            }
+        },
+        "8": {
+            "origin_en": "Overt Communication of Intent Before the Attempt",
+            "origin_zh": "企图前公开表达意图",
+            "rewritten_en": "Was intent communicated before the attempt?",
+            "rewritten_zh": "在自杀企图前是否表达过意图？",
+            "dimension": "Objective Circumstances",
+            "category": "positive",
+            "options": {
+                "0": {"en": "None", "zh": "没有"},
+                "1": {"en": "Equivocal communication", "zh": "模糊的表达"},
+                "2": {"en": "Unequivocal communication", "zh": "明确的表达"}
+            }
+        },
+        "9": {
+            "origin_en": "Alleged Purpose of Attempt",
+            "origin_zh": "自述的企图目的",
+            "rewritten_en": "What was the alleged purpose of the attempt?",
+            "rewritten_zh": "自杀企图的自述目的是什么？",
+            "dimension": "Self Report",
+            "category": "positive",
+            "options": {
+                "0": {"en": "To manipulate environment, get attention, revenge", "zh": "操纵环境、获得关注、报复"},
+                "1": {"en": "Components of '0' and '2'", "zh": "混合了'0'和'2'的成分"},
+                "2": {"en": "To escape, surcease, solve problems", "zh": "逃避、解脱、解决问题"}
+            }
+        },
+        "10": {
+            "origin_en": "Expectations of Fatality",
+            "origin_zh": "对死亡的预期",
+            "rewritten_en": "What were the expectations regarding fatality?",
+            "rewritten_zh": "对死亡结果的预期是什么？",
+            "dimension": "Self Report",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Thought that death was unlikely", "zh": "认为死亡不太可能"},
+                "1": {"en": "Thought that death was possible but not probable", "zh": "认为死亡可能但不是很可能"},
+                "2": {"en": "Thought that death was probable or certain", "zh": "认为死亡很可能或必然发生"}
+            }
+        },
+        "11": {
+            "origin_en": "Conception of Method's Lethality",
+            "origin_zh": "对方法致死性的认知",
+            "rewritten_en": "How lethal did the person believe the method to be?",
+            "rewritten_zh": "当事人认为所用方法的致死性如何？",
+            "dimension": "Self Report",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Did less to self than he thought would be lethal", "zh": "实际伤害程度低于自认为致命的程度"},
+                "1": {"en": "Wasn't sure if what he did would be lethal", "zh": "不确定所做的是否会致命"},
+                "2": {"en": "Equaled or exceeded what he thought would be lethal", "zh": "达到或超过自认为致命的程度"}
+            }
+        },
+        "12": {
+            "origin_en": "Seriousness of Attempt",
+            "origin_zh": "企图的认真程度",
+            "rewritten_en": "How serious was the attempt to end life?",
+            "rewritten_zh": "结束生命的企图有多认真？",
+            "dimension": "Self Report",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Did not seriously attempt to end life", "zh": "并非认真想结束生命"},
+                "1": {"en": "Uncertain about seriousness to end life", "zh": "不确定是否认真想结束生命"},
+                "2": {"en": "Seriously attempted to end life", "zh": "认真想要结束生命"}
+            }
+        },
+        "13": {
+            "origin_en": "Attitude Toward Living/Dying",
+            "origin_zh": "对生死的态度",
+            "rewritten_en": "What was the attitude toward living or dying?",
+            "rewritten_zh": "对生死的态度是什么？",
+            "dimension": "Self Report",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Did not want to die", "zh": "不想死"},
+                "1": {"en": "Components of '0' and '2'", "zh": "混合了'0'和'2'的成分"},
+                "2": {"en": "Wanted to die", "zh": "想死"}
+            }
+        },
+        "14": {
+            "origin_en": "Conception of Medical Rescuability",
+            "origin_zh": "对医疗抢救可能性的认知",
+            "rewritten_en": "What were the beliefs about medical rescue?",
+            "rewritten_zh": "对医疗抢救可能性的看法是什么？",
+            "dimension": "Self Report",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Thought that death would be unlikely if he received medical attention", "zh": "认为如果接受医疗救治，死亡不太可能"},
+                "1": {"en": "Was uncertain whether death could be averted by medical attention", "zh": "不确定医疗救治是否能避免死亡"},
+                "2": {"en": "Was certain of death even if he received medical attention", "zh": "确信即使接受医疗救治也会死亡"}
+            }
+        },
+        "15": {
+            "origin_en": "Degree of Premeditation",
+            "origin_zh": "预谋程度",
+            "rewritten_en": "How much premeditation was involved?",
+            "rewritten_zh": "预谋程度如何？",
+            "dimension": "Self Report",
+            "category": "positive",
+            "options": {
+                "0": {"en": "None; Impulsive", "zh": "没有预谋；冲动性的"},
+                "1": {"en": "Suicide contemplated for three hours or less prior to attempt", "zh": "企图前3小时或更短时间内考虑过自杀"},
+                "2": {"en": "Suicide contemplated for more than three hours prior to attempt", "zh": "企图前考虑自杀超过3小时"}
+            }
+        },
+        "16": {
+            "origin_en": "Reaction to Attempt",
+            "origin_zh": "对企图的反应",
+            "rewritten_en": "What was the reaction to the attempt?",
+            "rewritten_zh": "对自杀企图的反应是什么？",
+            "dimension": "Other Aspects",
+            "category": "positive",
+            "included_in_total": false,
+            "options": {
+                "0": {"en": "Sorry about attempt; feels foolish, ashamed", "zh": "对企图感到后悔；觉得愚蠢、羞耻"},
+                "1": {"en": "Accepts both attempt and its failure", "zh": "接受企图和失败"},
+                "2": {"en": "Regrets failure of attempt", "zh": "后悔企图失败"}
+            }
+        },
+        "17": {
+            "origin_en": "Visualization of Death",
+            "origin_zh": "对死亡的想象",
+            "rewritten_en": "How was death visualized?",
+            "rewritten_zh": "如何想象死亡？",
+            "dimension": "Other Aspects",
+            "category": "positive",
+            "included_in_total": false,
+            "options": {
+                "0": {"en": "Life-after-death, reunion with decedents", "zh": "来世、与逝者重聚"},
+                "1": {"en": "Never ending sleep, darkness, end-of-things", "zh": "永恒的睡眠、黑暗、万物终结"},
+                "2": {"en": "No conceptions of, or thoughts about death", "zh": "对死亡没有概念或想法"}
+            }
+        },
+        "18": {
+            "origin_en": "Number of Previous Attempts",
+            "origin_zh": "之前的企图次数",
+            "rewritten_en": "How many previous suicide attempts?",
+            "rewritten_zh": "之前有多少次自杀企图？",
+            "dimension": "Other Aspects",
+            "category": "positive",
+            "included_in_total": false,
+            "options": {
+                "0": {"en": "None", "zh": "没有"},
+                "1": {"en": "One or two", "zh": "一次或两次"},
+                "2": {"en": "Three or more", "zh": "三次或更多"}
+            }
+        },
+        "19": {
+            "origin_en": "Relationship between Alcohol Intake and Attempt",
+            "origin_zh": "酒精摄入与企图的关系",
+            "rewritten_en": "What was the relationship between alcohol and the attempt?",
+            "rewritten_zh": "酒精摄入与自杀企图有什么关系？",
+            "dimension": "Other Aspects",
+            "category": "positive",
+            "included_in_total": false,
+            "options": {
+                "0": {"en": "Some alcohol intake prior to but not related to attempt, reportedly not enough to impair judgment, reality testing", "zh": "企图前有酒精摄入但与企图无关，据报告不足以影响判断力和现实检验"},
+                "1": {"en": "Enough alcohol intake to impair judgment, reality testing and diminish responsibility/impulse control", "zh": "酒精摄入足以影响判断力、现实检验并降低责任感/冲动控制"},
+                "2": {"en": "Intentional intake of alcohol in order to facilitate implementation of suicide attempt", "zh": "故意摄入酒精以促进自杀企图的实施"}
+            }
+        },
+        "20": {
+            "origin_en": "Relationship between Drug Intake and Attempt",
+            "origin_zh": "药物摄入与企图的关系",
+            "rewritten_en": "What was the relationship between drug intake and the attempt?",
+            "rewritten_zh": "药物摄入与自杀企图有什么关系？",
+            "dimension": "Other Aspects",
+            "category": "positive",
+            "included_in_total": false,
+            "note": "Drug is not the method used to suicide (narcotics, hallucinogens, etc.)",
+            "options": {
+                "0": {"en": "Some drug intake prior to but not related to attempt, reportedly not enough to impair judgment, reality testing", "zh": "企图前有药物摄入但与企图无关，据报告不足以影响判断力和现实检验"},
+                "1": {"en": "Enough drug intake to impair judgment, identity testing and diminish responsibility/impulse control", "zh": "药物摄入足以影响判断力、身份检验并降低责任感/冲动控制"},
+                "2": {"en": "Intentional drug intake in order to facilitate implementation of suicide attempt", "zh": "故意摄入药物以促进自杀企图的实施"}
+            }
+        }
+    },
+    "prompts": {
+        "rpa_choose_prefix": {
+            "en": "Regarding \"<statement>\", which of the following best describes the situation?",
+            "zh": "关于\"<statement>\"，以下哪项最能描述情况？"
+        },
+        "convert_to_choice": {
+            "en": "I have conducted many conversations with <character>. I will input a dict of many samples, where each sample consists of a statement and a conversation. \nYour task is to convert each conversation into a choice indicating the severity of <character>'s suicide intent. You should output a dict, where the keys are the same as the input dict, and the values are the choices. \n===OUTPUT FORMAT===\n{\n    \"<i_start>\": <choice 1>,\n    ...\n    \"<i_end>\": <choice n>\n}\n===CHOICE INSTRUCTION===\n",
+            "zh": "我已经和<character>进行了许多对话。我将输入一个包含许多样本的字典，其中每个样本包括一个陈述和一段对话。\n你的任务是将每段对话转换为一个选择，指示<character>自杀意图的严重程度。你应该输出一个字典，其中键与输入字典相同，值为选择。\n===输出格式===\n{\n    \"<i_start>\": <choice 1>,\n    ...\n    \"<i_end>\": <choice n>\n}\n===选择指示==="
+        },
+        "llm_choice_instruction": {
+            "en": "Each choice is a number from 0 to 2. Please evaluate <character> based on the conversation using the scales: 0 denotes 'low intent/severity', 1 denotes 'moderate intent/severity', and 2 denotes 'high intent/severity'. In case <character> refuses to answer the question, use \"x\" to indicate it.",
+            "zh": "每个选择都是从0到2的数字。请根据对话使用以下评分标准评估<character>：0代表\"低意图/严重程度\"，1代表\"中等意图/严重程度\"，2代表\"高意图/严重程度\"。如果<character>拒绝回答该问题，用\"x\"表示。"
+        },
+        "rpa_choice_instruction": {
+            "en": "Reply a number from 0 to 2 using the scales: 0 denotes 'low intent/severity', 1 denotes 'moderate intent/severity', and 2 denotes 'high intent/severity'. Please answer with the number only, without anything else.",
+            "zh": "请用0到2的等级来回答，0代表\"低意图/严重程度\"，1代表\"中等意图/严重程度\"，2代表\"高意图/严重程度\"。请你只回答这一个数字，不要说其他内容。"
+        },
+        "dim_desc": {
+            "Objective Circumstances": "The Objective Circumstances dimension assesses the observable, factual aspects of the suicide attempt, including the degree of isolation, timing that affects likelihood of intervention, precautions taken against discovery, help-seeking behavior, final acts in anticipation of death, active preparation, presence of a suicide note, and prior communication of intent. These items provide objective indicators of the seriousness and planning involved in the attempt.",
+            "Self Report": "The Self Report dimension captures the patient's subjective perceptions and beliefs about their suicide attempt, including the alleged purpose, expectations of fatality, conception of the method's lethality, perceived seriousness of the attempt, attitude toward living/dying, beliefs about medical rescuability, and degree of premeditation. These items reflect the individual's internal experience and intent.",
+            "Other Aspects": "The Other Aspects dimension includes supplementary information not included in the total score, such as reaction to the attempt, visualization of death, number of previous attempts, and the relationship between substance use (alcohol/drugs) and the attempt. These items provide additional context for clinical assessment."
+        }
+    }
+}

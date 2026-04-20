@@ -1,0 +1,313 @@
+{
+    "name": "BSS",
+    "full_name": "Beck Scale for Suicide Ideation",
+    "full_name_zh": "Beck自杀意念量表",
+    "author": "Aaron T. Beck, M.D.",
+    "description": "A 19-item self-report instrument for detecting and measuring the intensity of suicidal ideation in adults and adolescents. The scale assesses the respondent's thoughts, plans, and intent to commit suicide during the past week.",
+    "description_zh": "一份19题的自评工具，用于检测和测量成人和青少年自杀意念的强度。该量表评估受访者在过去一周内关于自杀的想法、计划和意图。",
+    "psychobench_prompt": "You can only reply numbers from 0 to 2 in the following statements. Please rate each item based on how you have been feeling during the past week including today. 0 denotes the least severe, 2 denotes the most severe. Here are the statements, score them one by one:",
+    "psychobench_prompt_choice_instruction": "Each choice is a number from 0 to 2. Please evaluate <character> based on the conversation using the scales: 0 denotes 'low intensity', 1 denotes 'moderate intensity', and 2 denotes 'high intensity'.",
+    "scale": 3,
+    "compute_mode": "SUM",
+    "scoring_note": "Items 1-5 serve as a screen. If respondent reports any wish to die (item 2 > 0) or any active or passive suicidal ideation (items 4 or 5 > 0), continue with items 6-19. Total score ranges from 0 to 38.",
+    "reverse": [1],
+    "categories": [
+        {
+            "cat_name": "Wish to Live/Die",
+            "cat_questions": [1, 2, 3, 4, 5],
+            "description": "生死愿望：评估活下去与死去的愿望强度",
+            "description_en": "Assesses the intensity of wishes to live versus die"
+        },
+        {
+            "cat_name": "Suicidal Ideation",
+            "cat_questions": [6, 7, 8, 9, 10, 11],
+            "description": "自杀意念：自杀想法的特征、态度和控制能力",
+            "description_en": "Characteristics, attitudes, and control over suicidal thoughts"
+        },
+        {
+            "cat_name": "Planned Attempt",
+            "cat_questions": [12, 13, 14, 15, 16, 17, 18, 19],
+            "description": "计划性企图：自杀方法、准备和实施计划",
+            "description_en": "Method, preparation, and implementation plans for suicide"
+        }
+    ],
+    "range": [0, 2],
+    "scoring_interpretation": {
+        "0-3": "Minimal suicidal ideation (极轻微自杀意念)",
+        "4-8": "Mild suicidal ideation (轻度自杀意念)",
+        "9-16": "Moderate suicidal ideation (中度自杀意念)",
+        "17-38": "Severe suicidal ideation (重度自杀意念)"
+    },
+    "questions": {
+        "1": {
+            "origin_en": "Wish to Live",
+            "origin_zh": "活下去的愿望",
+            "rewritten_en": "How strong is your wish to live?",
+            "rewritten_zh": "您希望活下去的程度如何？（最近一周）",
+            "dimension": "Wish to Live/Die",
+            "category": "reverse",
+            "options": {
+                "0": {"en": "Moderate to strong", "zh": "中等到强烈"},
+                "1": {"en": "Weak", "zh": "弱"},
+                "2": {"en": "None", "zh": "没有活着的欲望"}
+            }
+        },
+        "2": {
+            "origin_en": "Wish to Die",
+            "origin_zh": "死去的愿望",
+            "rewritten_en": "How strong is your wish to die?",
+            "rewritten_zh": "您希望死去的程度如何？（最近一周）",
+            "dimension": "Wish to Live/Die",
+            "category": "positive",
+            "options": {
+                "0": {"en": "None", "zh": "没有死去的欲望"},
+                "1": {"en": "Weak", "zh": "弱"},
+                "2": {"en": "Moderate to strong", "zh": "中等到强烈"}
+            }
+        },
+        "3": {
+            "origin_en": "Reasons for Living/Dying",
+            "origin_zh": "活下去与死去的理由对比",
+            "rewritten_en": "Do your reasons for living outweigh your reasons for dying?",
+            "rewritten_zh": "您要活下去的理由胜过您要死去的理由吗？（最近一周）",
+            "dimension": "Wish to Live/Die",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Reasons for living outweigh reasons for dying", "zh": "要活下去胜过要死去"},
+                "1": {"en": "About equal", "zh": "二者相当"},
+                "2": {"en": "Reasons for dying outweigh reasons for living", "zh": "要死去胜过要活下来"}
+            }
+        },
+        "4": {
+            "origin_en": "Desire to Make Active Suicide Attempt",
+            "origin_zh": "主动尝试自杀的愿望",
+            "rewritten_en": "How strong is your desire to make an active suicide attempt?",
+            "rewritten_zh": "您主动尝试自杀的愿望程度如何？（最近一周）",
+            "dimension": "Wish to Live/Die",
+            "category": "positive",
+            "options": {
+                "0": {"en": "None", "zh": "没有"},
+                "1": {"en": "Weak", "zh": "弱"},
+                "2": {"en": "Moderate to strong", "zh": "中等到强烈"}
+            }
+        },
+        "5": {
+            "origin_en": "Passive Suicidal Desire",
+            "origin_zh": "被动自杀愿望",
+            "rewritten_en": "How strong is your passive suicidal desire (e.g., wishing to go to sleep and not wake up, dying accidentally)?",
+            "rewritten_zh": "您希望外力结束自己生命，即有\"被动自杀愿望\"的程度如何？（如，希望一直睡下去不再醒来、意外地死去等）（最近一周）",
+            "dimension": "Wish to Live/Die",
+            "category": "positive",
+            "options": {
+                "0": {"en": "None", "zh": "没有"},
+                "1": {"en": "Weak", "zh": "弱"},
+                "2": {"en": "Moderate to strong", "zh": "中等到强烈"}
+            }
+        },
+        "6": {
+            "origin_en": "Duration of Suicidal Ideation",
+            "origin_zh": "自杀想法持续时间",
+            "rewritten_en": "How long do your suicidal thoughts last?",
+            "rewritten_zh": "您的这种自杀想法持续存在多长时间？（最近一周）",
+            "dimension": "Suicidal Ideation",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Brief, fleeting periods", "zh": "短暂、一闪即逝"},
+                "1": {"en": "Longer periods", "zh": "较长时间"},
+                "2": {"en": "Continuous or almost continuous", "zh": "持续或几乎是持续的"}
+            }
+        },
+        "7": {
+            "origin_en": "Frequency of Suicidal Ideation",
+            "origin_zh": "自杀想法出现频度",
+            "rewritten_en": "How often do you have suicidal thoughts?",
+            "rewritten_zh": "您自杀想法出现的频度如何？（最近一周）",
+            "dimension": "Suicidal Ideation",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Rare, occasional", "zh": "极少、偶尔"},
+                "1": {"en": "Intermittent", "zh": "有时"},
+                "2": {"en": "Persistent or continuous", "zh": "经常或持续"}
+            }
+        },
+        "8": {
+            "origin_en": "Attitude Toward Ideation/Wish",
+            "origin_zh": "对自杀的态度",
+            "rewritten_en": "What is your attitude toward suicidal thoughts?",
+            "rewritten_zh": "您对自杀持什么态度？（最近一周）",
+            "dimension": "Suicidal Ideation",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Rejection", "zh": "排斥"},
+                "1": {"en": "Ambivalent or indifferent", "zh": "矛盾或无所谓"},
+                "2": {"en": "Acceptance", "zh": "接受"}
+            }
+        },
+        "9": {
+            "origin_en": "Control Over Suicidal Action/Acting-Out Wish",
+            "origin_zh": "控制自杀想法的能力",
+            "rewritten_en": "How much control do you have over suicidal thoughts and not acting on them?",
+            "rewritten_zh": "您觉得自己控制自杀想法、不把它变成行动的能力如何？（最近一周）",
+            "dimension": "Suicidal Ideation",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Has sense of control", "zh": "能控制"},
+                "1": {"en": "Unsure of control", "zh": "不知能否控制"},
+                "2": {"en": "Has no sense of control", "zh": "不能控制"}
+            }
+        },
+        "10": {
+            "origin_en": "Deterrents to Active Attempt",
+            "origin_zh": "阻止自杀的因素",
+            "rewritten_en": "To what extent do deterrents (e.g., family, irreversibility of death) prevent you from attempting suicide?",
+            "rewritten_zh": "如果出现自杀想法，某些顾忌（如顾及家人、死亡不可逆转等）在多大程度上能阻止您自杀？（最近一周）",
+            "dimension": "Suicidal Ideation",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Would not attempt suicide because of deterrents", "zh": "能阻止自杀"},
+                "1": {"en": "Deterrents have some concern", "zh": "能减少自杀的危险"},
+                "2": {"en": "No concern about deterrents", "zh": "无顾忌或无影响"}
+            }
+        },
+        "11": {
+            "origin_en": "Reasons for Contemplated Attempt",
+            "origin_zh": "想自杀的原因",
+            "rewritten_en": "What are your main reasons for contemplating suicide?",
+            "rewritten_zh": "当您想自杀时，主要是为了什么？（最近一周）",
+            "dimension": "Suicidal Ideation",
+            "category": "positive",
+            "options": {
+                "0": {"en": "To manipulate the environment, get attention, revenge", "zh": "控制形势、寻求关注、报复"},
+                "1": {"en": "To escape, end suffering, solve problems", "zh": "逃避、减轻痛苦、解决问题"},
+                "2": {"en": "Combination of both", "zh": "前两种情况均有"}
+            }
+        },
+        "12": {
+            "origin_en": "Method: Specificity/Planning",
+            "origin_zh": "自杀方法的具体性",
+            "rewritten_en": "Have you thought about a method for ending your life?",
+            "rewritten_zh": "您想过结束自己生命的方法了吗？（最近一周）",
+            "dimension": "Planned Attempt",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Not considered", "zh": "没想过"},
+                "1": {"en": "Considered, but details not worked out", "zh": "想过，但没制订出具体细节"},
+                "2": {"en": "Details worked out or well formulated", "zh": "制订出具体细节或计划得很周详"}
+            }
+        },
+        "13": {
+            "origin_en": "Method: Availability/Opportunity",
+            "origin_zh": "自杀方法的可及性",
+            "rewritten_en": "Do you have access to the method or opportunity to carry out suicidal thoughts?",
+            "rewritten_zh": "您把自杀想法落实的条件或机会如何？（最近一周）",
+            "dimension": "Planned Attempt",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Method not available; no opportunity", "zh": "没有现成的方法、没有机会"},
+                "1": {"en": "Method would take time/effort to obtain", "zh": "需要时间或精力准备自杀工具"},
+                "2": {"en": "Method and opportunity available or anticipated", "zh": "有现成的方法和机会或预计将来有方法和机会"}
+            }
+        },
+        "14": {
+            "origin_en": "Sense of Capability to Carry Out Attempt",
+            "origin_zh": "自杀的能力和勇气",
+            "rewritten_en": "Do you believe you have the ability and courage to commit suicide?",
+            "rewritten_zh": "您相信自己有能力并且有勇气去自杀吗？（最近一周）",
+            "dimension": "Planned Attempt",
+            "category": "positive",
+            "options": {
+                "0": {"en": "No courage, too weak, afraid, incompetent", "zh": "没有勇气、太软弱、害怕、没有能力"},
+                "1": {"en": "Unsure of courage or competence", "zh": "不确信自己有无能力、勇气"},
+                "2": {"en": "Sure of competence, courage", "zh": "确信自己有能力、有勇气"}
+            }
+        },
+        "15": {
+            "origin_en": "Expectancy of Actual Attempt",
+            "origin_zh": "预计会尝试自杀",
+            "rewritten_en": "Do you expect that you will actually make a suicide attempt?",
+            "rewritten_zh": "您预计某一时间您确实会尝试自杀吗？（最近一周）",
+            "dimension": "Planned Attempt",
+            "category": "positive",
+            "options": {
+                "0": {"en": "No", "zh": "不会"},
+                "1": {"en": "Uncertain, not sure", "zh": "不确定"},
+                "2": {"en": "Yes", "zh": "会"}
+            }
+        },
+        "16": {
+            "origin_en": "Actual Preparation for Contemplated Attempt",
+            "origin_zh": "为自杀做的准备",
+            "rewritten_en": "How much preparation have you made for a suicide attempt?",
+            "rewritten_zh": "为了自杀，您的准备行动完成得怎样？（最近一周）",
+            "dimension": "Planned Attempt",
+            "category": "positive",
+            "options": {
+                "0": {"en": "None", "zh": "没有准备"},
+                "1": {"en": "Partial preparation (e.g., started collecting pills)", "zh": "部分完成（如，开始收集药片）"},
+                "2": {"en": "Complete preparation (e.g., has pills, gun with bullets)", "zh": "全部完成（如，有药片、刀片、有子弹的枪）"}
+            }
+        },
+        "17": {
+            "origin_en": "Suicide Note",
+            "origin_zh": "自杀遗言",
+            "rewritten_en": "Have you written a suicide note?",
+            "rewritten_zh": "您已着手写自杀遗言了吗？（最近一周）",
+            "dimension": "Planned Attempt",
+            "category": "positive",
+            "options": {
+                "0": {"en": "No", "zh": "没有考虑"},
+                "1": {"en": "Only thought about or started but not completed", "zh": "仅仅考虑、开始但未写完"},
+                "2": {"en": "Completed", "zh": "写完"}
+            }
+        },
+        "18": {
+            "origin_en": "Final Acts in Anticipation of Death",
+            "origin_zh": "预期死亡的最终安排",
+            "rewritten_en": "Have you made any final arrangements in anticipation of death (e.g., insurance, will)?",
+            "rewritten_zh": "您是否因为预计要结束自己的生命而抓紧处理一些事情？如买保险或准备遗嘱。（最近一周）",
+            "dimension": "Planned Attempt",
+            "category": "positive",
+            "options": {
+                "0": {"en": "None", "zh": "没有"},
+                "1": {"en": "Thought about or made some arrangements", "zh": "考虑过或做了一些安排"},
+                "2": {"en": "Made definite plans or completed arrangements", "zh": "有肯定的计划或安排完毕"}
+            }
+        },
+        "19": {
+            "origin_en": "Concealment of Contemplated Attempt",
+            "origin_zh": "隐瞒自杀想法",
+            "rewritten_en": "Have you concealed your suicidal thoughts from others?",
+            "rewritten_zh": "您是否让人知道自己的自杀想法？（最近一周）",
+            "dimension": "Planned Attempt",
+            "category": "positive",
+            "options": {
+                "0": {"en": "Revealed ideas openly", "zh": "坦率主动说出想法"},
+                "1": {"en": "Held back on revealing", "zh": "不主动说出"},
+                "2": {"en": "Attempted to deceive, conceal", "zh": "试图欺骗、隐瞒"}
+            }
+        }
+    },
+    "prompts": {
+        "rpa_choose_prefix": {
+            "en": "Regarding \"<statement>\", which of the following best describes your situation during the past week?",
+            "zh": "关于\"<statement>\"，以下哪项最能描述您最近一周的情况？"
+        },
+        "convert_to_choice": {
+            "en": "I have conducted many conversations with <character>. I will input a dict of many samples, where each sample consists of a statement and a conversation. \nYour task is to convert each conversation into a choice indicating the intensity of <character>'s suicidal ideation. You should output a dict, where the keys are the same as the input dict, and the values are the choices. \n===OUTPUT FORMAT===\n{\n    \"<i_start>\": <choice 1>,\n    ...\n    \"<i_end>\": <choice n>\n}\n===CHOICE INSTRUCTION===\n",
+            "zh": "我已经和<character>进行了许多对话。我将输入一个包含许多样本的字典，其中每个样本包括一个陈述和一段对话。\n你的任务是将每段对话转换为一个选择，指示<character>自杀意念的强度。你应该输出一个字典，其中键与输入字典相同，值为选择。\n===输出格式===\n{\n    \"<i_start>\": <choice 1>,\n    ...\n    \"<i_end>\": <choice n>\n}\n===选择指示==="
+        },
+        "llm_choice_instruction": {
+            "en": "Each choice is a number from 0 to 2. Please evaluate <character> based on the conversation using the scales: 0 denotes 'low intensity', 1 denotes 'moderate intensity', and 2 denotes 'high intensity'. In case <character> refuses to answer the question, use \"x\" to indicate it.",
+            "zh": "每个选择都是从0到2的数字。请根据对话使用以下评分标准评估<character>：0代表\"低强度\"，1代表\"中等强度\"，2代表\"高强度\"。如果<character>拒绝回答该问题，用\"x\"表示。"
+        },
+        "rpa_choice_instruction": {
+            "en": "Reply a number from 0 to 2 using the scales: 0 denotes 'low intensity', 1 denotes 'moderate intensity', and 2 denotes 'high intensity'. Please answer with the number only, without anything else.",
+            "zh": "请用0到2的等级来回答，0代表\"低强度\"，1代表\"中等强度\"，2代表\"高强度\"。请你只回答这一个数字，不要说其他内容。"
+        },
+        "dim_desc": {
+            "Wish to Live/Die": "The Wish to Live/Die dimension (items 1-5) assesses the basic desire to live versus die, including active and passive suicidal wishes. These items serve as screening questions - if the respondent endorses any wish to die or suicidal desire, the remaining items should be administered.",
+            "Suicidal Ideation": "The Suicidal Ideation dimension (items 6-11) examines the characteristics of suicidal thoughts, including their duration, frequency, the person's attitude toward them, sense of control, deterrents that might prevent action, and reasons for contemplating suicide.",
+            "Planned Attempt": "The Planned Attempt dimension (items 12-19) assesses the specificity of suicide planning, including method consideration, availability of means, perceived capability, expectancy of attempt, actual preparations made, presence of a suicide note, final arrangements, and concealment of suicidal intent."
+        }
+    }
+}

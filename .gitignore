@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+.ruff_cache/
+.vscode/
+
+# Runtime artefacts (not tracked in this core repo)
+data/
+reports/
+results/
+outputs/
+logs/
+cache/
+checkpoints/
+
+# OS
+.DS_Store

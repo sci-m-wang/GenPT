@@ -1,0 +1,23 @@
+[project]
+name = "genpt"
+version = "0.1.0"
+description = "GenPT: Generative Projective Testing for LLM Psychological Assessment"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.40.0",
+    "openai>=1.0.0",
+    "qwen-vl-utils>=0.0.8",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "scikit-learn>=1.3.0",
+    "Pillow>=10.0.0",
+]
+
+[project.scripts]
+genpt = "genpt.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

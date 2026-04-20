@@ -1,0 +1,348 @@
+{
+    "name": "BDI",
+    "full_name": "Beck's Depression Inventory",
+    "psychobench_prompt": "You can only reply numbers from 0 to 3 in the following statements. Please read each group of statements carefully and pick the one statement in each group that best describes the way you have been feeling during the past two weeks, including today. 0 denotes the least severe, 3 denotes the most severe. Here are the statements, score them one by one:",
+    "psychobench_prompt_choice_instruction": "Each choice is a number from 0 to 3. Please evaluate <character> based on the conversation using the scales: 0 denotes 'no symptoms or minimal', 1 denotes 'mild symptoms', 2 denotes 'moderate symptoms', and 3 denotes 'severe symptoms'.",
+    "scale": 4,
+    "compute_mode": "SUM",
+    "reverse": [],
+    "categories": [
+        {
+            "cat_name": "Cognitive-Affective",
+            "cat_questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14],
+            "description": "认知-情感症状，包括悲伤、悲观、失败感、快感缺失、内疚感、惩罚感、自我厌恶、自我批评、自杀念头、哭泣、易怒、犹豫不决、自我形象"
+        },
+        {
+            "cat_name": "Somatic",
+            "cat_questions": [12, 15, 16, 17, 18, 19, 20, 21],
+            "description": "躯体症状，包括社交退缩、工作困难、睡眠问题、疲劳感、食欲变化、体重变化、健康担忧、性欲变化"
+        }
+    ],
+    "range": [0, 3],
+    "scoring_interpretation": {
+        "1-10": "These ups and downs are considered normal (正常情绪波动)",
+        "11-16": "Mild mood disturbance (轻度情绪障碍)",
+        "17-20": "Borderline clinical depression (临界临床抑郁)",
+        "21-30": "Moderate depression (中度抑郁)",
+        "31-40": "Severe depression (重度抑郁)",
+        "over 40": "Extreme depression (极度抑郁)"
+    },
+    "questions": {
+        "1": {
+            "origin_en": "Sadness",
+            "origin_zh": "悲伤感",
+            "rewritten_en": "How sad do you feel?",
+            "rewritten_zh": "你感到多悲伤？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I do not feel sad.", "zh": "我不感到悲伤"},
+                "1": {"en": "I feel sad.", "zh": "我感到悲伤"},
+                "2": {"en": "I am sad all the time and I can't snap out of it.", "zh": "我始终悲伤，无法自拔"},
+                "3": {"en": "I am so sad and unhappy that I can't stand it.", "zh": "我太悲伤或不愉快，无法忍受"}
+            }
+        },
+        "2": {
+            "origin_en": "Pessimism",
+            "origin_zh": "悲观",
+            "rewritten_en": "How pessimistic do you feel about the future?",
+            "rewritten_zh": "你对未来感到多悲观？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I am not particularly discouraged about the future.", "zh": "我对未来并不特别失望"},
+                "1": {"en": "I feel discouraged about the future.", "zh": "我对未来感到失望"},
+                "2": {"en": "I feel I have nothing to look forward to.", "zh": "我感到没有什么可期待的"},
+                "3": {"en": "I feel the future is hopeless and that things cannot improve.", "zh": "我感到未来毫无希望，情况不可能好转"}
+            }
+        },
+        "3": {
+            "origin_en": "Past Failure",
+            "origin_zh": "失败感",
+            "rewritten_en": "How much do you feel like a failure?",
+            "rewritten_zh": "你感觉自己有多失败？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I do not feel like a failure.", "zh": "我不觉得自己是个失败者"},
+                "1": {"en": "I feel I have failed more than the average person.", "zh": "我觉得自己比一般人失败更多"},
+                "2": {"en": "As I look back on my life, all I can see is a lot of failures.", "zh": "回顾我的人生，我看到的都是失败"},
+                "3": {"en": "I feel I am a complete failure as a person.", "zh": "我觉得自己是一个彻底的失败者"}
+            }
+        },
+        "4": {
+            "origin_en": "Loss of Pleasure",
+            "origin_zh": "快感缺失",
+            "rewritten_en": "How much satisfaction do you get from things?",
+            "rewritten_zh": "你从事物中获得多少满足感？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I get as much satisfaction out of things as I used to.", "zh": "我从事物中获得的满足感和以前一样多"},
+                "1": {"en": "I don't enjoy things the way I used to.", "zh": "我不再像以前那样享受事物"},
+                "2": {"en": "I don't get real satisfaction out of anything anymore.", "zh": "我再也无法从任何事物中获得真正的满足感"},
+                "3": {"en": "I am dissatisfied or bored with everything.", "zh": "我对一切都感到不满或厌倦"}
+            }
+        },
+        "5": {
+            "origin_en": "Guilty Feelings",
+            "origin_zh": "内疚感",
+            "rewritten_en": "How guilty do you feel?",
+            "rewritten_zh": "你感到多内疚？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I don't feel particularly guilty.", "zh": "我没有特别的内疚感"},
+                "1": {"en": "I feel guilty a good part of the time.", "zh": "我大部分时间都感到内疚"},
+                "2": {"en": "I feel quite guilty most of the time.", "zh": "我大多数时候都感到非常内疚"},
+                "3": {"en": "I feel guilty all of the time.", "zh": "我时刻都感到内疚"}
+            }
+        },
+        "6": {
+            "origin_en": "Punishment Feelings",
+            "origin_zh": "惩罚感",
+            "rewritten_en": "Do you feel you are being punished?",
+            "rewritten_zh": "你感到自己正在被惩罚吗？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I don't feel I am being punished.", "zh": "我不觉得自己正在被惩罚"},
+                "1": {"en": "I feel I may be punished.", "zh": "我感到自己可能会受到惩罚"},
+                "2": {"en": "I expect to be punished.", "zh": "我预期会受到惩罚"},
+                "3": {"en": "I feel I am being punished.", "zh": "我感到自己正在受到惩罚"}
+            }
+        },
+        "7": {
+            "origin_en": "Self-Dislike",
+            "origin_zh": "自我厌恶",
+            "rewritten_en": "How do you feel about yourself?",
+            "rewritten_zh": "你对自己感觉如何？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I don't feel disappointed in myself.", "zh": "我对自己不感到失望"},
+                "1": {"en": "I am disappointed in myself.", "zh": "我对自己感到失望"},
+                "2": {"en": "I am disgusted with myself.", "zh": "我对自己感到厌恶"},
+                "3": {"en": "I hate myself.", "zh": "我憎恨自己"}
+            }
+        },
+        "8": {
+            "origin_en": "Self-Criticalness",
+            "origin_zh": "自我批评",
+            "rewritten_en": "How critical are you of yourself?",
+            "rewritten_zh": "你对自己有多苛刻？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I don't feel I am any worse than anybody else.", "zh": "我不觉得自己比别人更差"},
+                "1": {"en": "I am critical of myself for my weaknesses or mistakes.", "zh": "我因自己的弱点或错误而批评自己"},
+                "2": {"en": "I blame myself all the time for my faults.", "zh": "我总是因自己的过错而责备自己"},
+                "3": {"en": "I blame myself for everything bad that happens.", "zh": "我把所有不好的事情都归咎于自己"}
+            }
+        },
+        "9": {
+            "origin_en": "Suicidal Thoughts",
+            "origin_zh": "自杀念头",
+            "rewritten_en": "Do you have any thoughts of killing yourself?",
+            "rewritten_zh": "你有自杀的念头吗？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I don't have any thoughts of killing myself.", "zh": "我没有自杀的念头"},
+                "1": {"en": "I have thoughts of killing myself, but I would not carry them out.", "zh": "我有自杀的念头，但不会付诸行动"},
+                "2": {"en": "I would like to kill myself.", "zh": "我想自杀"},
+                "3": {"en": "I would kill myself if I had the chance.", "zh": "如果有机会我就会自杀"}
+            }
+        },
+        "10": {
+            "origin_en": "Crying",
+            "origin_zh": "哭泣",
+            "rewritten_en": "How much do you cry?",
+            "rewritten_zh": "你哭得多吗？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I don't cry any more than usual.", "zh": "我不比平常哭得更多"},
+                "1": {"en": "I cry more now than I used to.", "zh": "我现在比以前哭得更多"},
+                "2": {"en": "I cry all the time now.", "zh": "我现在总是在哭"},
+                "3": {"en": "I used to be able to cry, but now I can't cry even though I want to.", "zh": "我以前能哭，但现在即使想哭也哭不出来"}
+            }
+        },
+        "11": {
+            "origin_en": "Agitation",
+            "origin_zh": "易怒",
+            "rewritten_en": "How irritated do you feel?",
+            "rewritten_zh": "你感到多烦躁？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I am no more irritated by things than I ever was.", "zh": "我不比以前更容易被事物激怒"},
+                "1": {"en": "I am slightly more irritated now than usual.", "zh": "我现在比平时稍微更容易烦躁"},
+                "2": {"en": "I am quite annoyed or irritated a good deal of the time.", "zh": "我大部分时间都相当烦恼或易怒"},
+                "3": {"en": "I feel irritated all the time.", "zh": "我一直感到烦躁"}
+            }
+        },
+        "12": {
+            "origin_en": "Loss of Interest",
+            "origin_zh": "社交退缩",
+            "rewritten_en": "How interested are you in other people?",
+            "rewritten_zh": "你对他人有多感兴趣？",
+            "dimension": "Somatic",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I have not lost interest in other people.", "zh": "我对他人没有失去兴趣"},
+                "1": {"en": "I am less interested in other people than I used to be.", "zh": "我对他人的兴趣比以前减少了"},
+                "2": {"en": "I have lost most of my interest in other people.", "zh": "我对他人失去了大部分兴趣"},
+                "3": {"en": "I have lost all of my interest in other people.", "zh": "我对他人完全失去了兴趣"}
+            }
+        },
+        "13": {
+            "origin_en": "Indecisiveness",
+            "origin_zh": "犹豫不决",
+            "rewritten_en": "How difficult is it for you to make decisions?",
+            "rewritten_zh": "你做决定有多困难？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I make decisions about as well as I ever could.", "zh": "我做决定的能力和以前一样好"},
+                "1": {"en": "I put off making decisions more than I used to.", "zh": "我比以前更拖延做决定"},
+                "2": {"en": "I have greater difficulty in making decisions more than I used to.", "zh": "我比以前更难做决定"},
+                "3": {"en": "I can't make decisions at all anymore.", "zh": "我再也无法做任何决定"}
+            }
+        },
+        "14": {
+            "origin_en": "Worthlessness",
+            "origin_zh": "自我形象",
+            "rewritten_en": "How do you feel about your appearance?",
+            "rewritten_zh": "你对自己的外表感觉如何？",
+            "dimension": "Cognitive-Affective",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I don't feel that I look any worse than I used to.", "zh": "我不觉得自己看起来比以前更差"},
+                "1": {"en": "I am worried that I am looking old or unattractive.", "zh": "我担心自己看起来衰老或没有吸引力"},
+                "2": {"en": "I feel there are permanent changes in my appearance that make me look unattractive.", "zh": "我觉得外貌发生了永久性变化，让我失去吸引力"},
+                "3": {"en": "I believe that I look ugly.", "zh": "我相信自己看起来很丑"}
+            }
+        },
+        "15": {
+            "origin_en": "Loss of Energy",
+            "origin_zh": "工作困难",
+            "rewritten_en": "How well can you work?",
+            "rewritten_zh": "你工作能力如何？",
+            "dimension": "Somatic",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I can work about as well as before.", "zh": "我的工作能力和以前一样"},
+                "1": {"en": "It takes an extra effort to get started at doing something.", "zh": "开始做事需要额外的努力"},
+                "2": {"en": "I have to push myself very hard to do anything.", "zh": "我必须非常努力地逼迫自己才能做任何事"},
+                "3": {"en": "I can't do any work at all.", "zh": "我完全无法工作"}
+            }
+        },
+        "16": {
+            "origin_en": "Changes in Sleeping Pattern",
+            "origin_zh": "睡眠问题",
+            "rewritten_en": "How well do you sleep?",
+            "rewritten_zh": "你睡眠质量如何？",
+            "dimension": "Somatic",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I can sleep as well as usual.", "zh": "我的睡眠和平常一样好"},
+                "1": {"en": "I don't sleep as well as I used to.", "zh": "我睡得不如以前好"},
+                "2": {"en": "I wake up 1-2 hours earlier than usual and find it hard to get back to sleep.", "zh": "我比平常早醒1-2小时，且难以再次入睡"},
+                "3": {"en": "I wake up several hours earlier than I used to and cannot get back to sleep.", "zh": "我比以前早醒好几个小时，且无法再次入睡"}
+            }
+        },
+        "17": {
+            "origin_en": "Tiredness or Fatigue",
+            "origin_zh": "疲劳感",
+            "rewritten_en": "How tired do you get?",
+            "rewritten_zh": "你感到多疲劳？",
+            "dimension": "Somatic",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I don't get more tired than usual.", "zh": "我不比平常更容易疲劳"},
+                "1": {"en": "I get tired more easily than I used to.", "zh": "我比以前更容易疲劳"},
+                "2": {"en": "I get tired from doing almost anything.", "zh": "做几乎任何事都让我感到疲劳"},
+                "3": {"en": "I am too tired to do anything.", "zh": "我太疲劳了，什么都做不了"}
+            }
+        },
+        "18": {
+            "origin_en": "Changes in Appetite",
+            "origin_zh": "食欲变化",
+            "rewritten_en": "How is your appetite?",
+            "rewritten_zh": "你的食欲如何？",
+            "dimension": "Somatic",
+            "category": "positive",
+            "options": {
+                "0": {"en": "My appetite is no worse than usual.", "zh": "我的食欲和平常一样"},
+                "1": {"en": "My appetite is not as good as it used to be.", "zh": "我的食欲不如以前好"},
+                "2": {"en": "My appetite is much worse now.", "zh": "我的食欲现在差多了"},
+                "3": {"en": "I have no appetite at all anymore.", "zh": "我完全没有食欲了"}
+            }
+        },
+        "19": {
+            "origin_en": "Weight Loss",
+            "origin_zh": "体重变化",
+            "rewritten_en": "Have you lost weight recently?",
+            "rewritten_zh": "你最近体重有变化吗？",
+            "dimension": "Somatic",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I haven't lost much weight, if any, lately.", "zh": "我最近没有减轻多少体重（如果有的话）"},
+                "1": {"en": "I have lost more than five pounds.", "zh": "我减轻了超过5磅（约2.3公斤）"},
+                "2": {"en": "I have lost more than ten pounds.", "zh": "我减轻了超过10磅（约4.5公斤）"},
+                "3": {"en": "I have lost more than fifteen pounds.", "zh": "我减轻了超过15磅（约6.8公斤）"}
+            }
+        },
+        "20": {
+            "origin_en": "Health Preoccupation",
+            "origin_zh": "健康担忧",
+            "rewritten_en": "How worried are you about your health?",
+            "rewritten_zh": "你对健康有多担忧？",
+            "dimension": "Somatic",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I am no more worried about my health than usual.", "zh": "我对健康的担忧不比平常多"},
+                "1": {"en": "I am worried about physical problems like aches, pains, upset stomach, or constipation.", "zh": "我担心身体问题，如疼痛、胃不适或便秘"},
+                "2": {"en": "I am very worried about physical problems and it's hard to think of much else.", "zh": "我非常担心身体问题，很难想其他事情"},
+                "3": {"en": "I am so worried about my physical problems that I cannot think of anything else.", "zh": "我对身体问题的担忧已经让我无法思考其他任何事情"}
+            }
+        },
+        "21": {
+            "origin_en": "Loss of Interest in Sex",
+            "origin_zh": "性欲变化",
+            "rewritten_en": "Have you noticed any change in your interest in sex?",
+            "rewritten_zh": "你对性的兴趣有变化吗？",
+            "dimension": "Somatic",
+            "category": "positive",
+            "options": {
+                "0": {"en": "I have not noticed any recent change in my interest in sex.", "zh": "我没有注意到最近对性的兴趣有任何变化"},
+                "1": {"en": "I am less interested in sex than I used to be.", "zh": "我对性的兴趣比以前减少了"},
+                "2": {"en": "I have almost no interest in sex.", "zh": "我对性几乎没有兴趣"},
+                "3": {"en": "I have lost interest in sex completely.", "zh": "我对性完全失去了兴趣"}
+            }
+        }
+    },
+    "prompts": {
+        "rpa_choose_prefix": {
+            "en": "Regarding \"<statement>\", which of the following best describes how you have been feeling?",
+            "zh": "关于\"<statement>\"，以下哪项最能描述你的感受？"
+        },
+        "convert_to_choice": {
+            "en": "I have conducted many conversations with <character>. I will input a dict of many samples, where each sample consists of a statement and a conversation. \nYour task is to convert each conversation into a choice indicating the severity of <character>'s depressive symptoms. You should output a dict, where the keys are the same as the input dict, and the values are the choices. \n===OUTPUT FORMAT===\n{\n    \"<i_start>\": <choice 1>,\n    ...\n    \"<i_end>\": <choice n>\n}\n===CHOICE INSTRUCTION===\n",
+            "zh": "我已经和<character>进行了许多对话。我将输入一个包含许多样本的字典，其中每个样本包括一个陈述和一段对话。\n你的任务是将每段对话转换为一个选择，指示<character>抑郁症状的严重程度。你应该输出一个字典，其中键与输入字典相同，值为选择。\n===输出格式===\n{\n    \"<i_start>\": <choice 1>,\n    ...\n    \"<i_end>\": <choice n>\n}\n===选择指示==="
+        },
+        "llm_choice_instruction": {
+            "en": "Each choice is a number from 0 to 3. Please evaluate <character> based on the conversation using the scales: 0 denotes 'no symptoms or minimal', 1 denotes 'mild symptoms', 2 denotes 'moderate symptoms', and 3 denotes 'severe symptoms'. In case <character> refuses to answer the question, use \"x\" to indicate it.",
+            "zh": "每个选择都是从0到3的数字。请根据对话使用以下评分标准评估<character>：0代表\"无症状或极少\"，1代表\"轻度症状\"，2代表\"中度症状\"，3代表\"重度症状\"。如果<character>拒绝回答该问题，用\"x\"表示。"
+        },
+        "rpa_choice_instruction": {
+            "en": "Reply a number from 0 to 3 using the scales: 0 denotes 'no symptoms or minimal', 1 denotes 'mild symptoms', 2 denotes 'moderate symptoms', and 3 denotes 'severe symptoms'. Please answer with the number only, without anything else.",
+            "zh": "请用0到3的等级来回答，0代表\"无症状或极少\"，1代表\"轻度症状\"，2代表\"中度症状\"，3代表\"重度症状\"。请你只回答这一个数字，不要说其他内容。"
+        },
+        "dim_desc": {
+            "Cognitive-Affective": "The Cognitive-Affective dimension in the BDI measures psychological symptoms of depression, including sadness, pessimism, sense of failure, loss of pleasure, guilty feelings, punishment feelings, self-dislike, self-criticalness, suicidal thoughts, crying, agitation, indecisiveness, and concerns about appearance. These symptoms reflect the mental and emotional aspects of depression, capturing how a person thinks about themselves, their past, and their future.",
+            "Somatic": "The Somatic dimension in the BDI measures physical and behavioral symptoms of depression, including loss of interest in others, work difficulty, sleep disturbance, fatigue, appetite changes, weight loss, health preoccupation, and loss of interest in sex. These symptoms reflect the bodily manifestations of depression and changes in daily functioning."
+        }
+    }
+}
