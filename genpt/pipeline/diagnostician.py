@@ -8,7 +8,7 @@ Equation: ŷ = D(S, E)
 
 Supports:
 - Personality prediction: Big Five (1-5 levels), MBTI (continuous scores)
-- Mental health prediction: Depression risk (0-4), Suicide risk (0-3)
+- Mental health prediction: Depression risk (0-3), Suicide risk (0-3)
 """
 
 from dataclasses import dataclass, field
